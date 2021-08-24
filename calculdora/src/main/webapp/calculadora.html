@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculadora</title>
+</head>
+<style>
+
+form{
+background: #D1F2EB ;
+ width: 25%;
+   padding: 12px 20px;
+ /*  display: inline-block; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+
+
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+body {
+    text-align: center;
+}
+</style>
+<body>
+<form action="Calculadora" method="get">
+<h2>Calculadora</h2>
+<label>Valor A</label><br/>
+<input type="text" id="valorA" name="valorA" required><br/><br/>
+<label>Valor B</label><br/>
+<input type="text" id="valorB" name="valorB" required><br/><br/>
+<select name="opcoes">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<input type="submit" value="calcular">
+<button  type="button"  onClick="location.href='/calculdora/calculadora.html'">limpar</button>
+<!-- <a type="button" href=""> limpar</a> -->
+
+</form>
+
+
+
+</body>
+</html>
